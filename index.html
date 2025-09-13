@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link id="favicon" rel="icon" type="image/png" href="assets/LS-logogram-master.png">
+    <title>Luarsekolah - Revamped</title>
+</head>
+<body class="font-['Comfortaa'] text-sm">
+    
+    <!-- Header -->
+
+    <header id="header" class="fixed w-full min-w-screen h-18 bg-white shadow-sm">
+        <section id="navbar" class="w-full h-full mx-auto flex flex-row justify-between gap-1 items-center ">
+            <!-- Logo -->
+            <div class="flex ml-18 w-fit">
+                <a href="#" class="w-auto h-14"><img class="hover:saturate-60 transition-all ease-in-out duration-500 w-full h-full" src="assets/LS-logo-master.png" alt="Logo Luarsekolah"></a>
+            </div>
+            <!-- Section -->
+            <div class="flex flex-row gap-8 w-fit">
+                <div class="w-fit px-1 flex gap-2 cursor-pointer hover:text-green-600 hover:underline transition-all ease-in-out duration-300"><p>Program</p><span><i class="fa-solid fa-angle-down"></i></span></div>
+                <div class="w-fit px-1 flex gap-2 cursor-pointer hover:text-green-600 hover:underline transition-all ease-in-out duration-300"><p>Tentang kami</p><span><i class="fa-solid fa-angle-down"></i></span></div>
+                <div class="w-fit px-1 flex gap-2 cursor-pointer hover:text-green-600 hover:underline transition-all ease-in-out duration-300"><p>Hubungi kami</p><span><i class="fa-solid fa-angle-down"></i></span></div>
+            </div>
+            <!-- SearchBar -->
+            <div class="flex flex-row gap-1 w-140 border-1 border-neutral-400 rounded-sm py-2.5 px-4">
+                <div class="relative left-2 w-1/10 mx-0">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="relative -left-2 w-full -ml-4">
+                    <input class="w-full border-1 border-transparent focus:border-transparent px-1" type="text" placeholder="Cari kelas yang ingin kamu pelajari">
+                </div>
+            </div>
+            <!-- Account -->
+            <div class="flex flex-row gap-4 pr-2 mr-20 w-fit">
+                <a href="login.html" class="px-5 py-2.5 border-1 border-neutral-400 rounded-sm hover:bg-neutral-100 active:bg-white transition-all ease-in-out duration-300">
+                    Masuk
+                </a>
+                <a href="register.html" class="px-5 py-2.5 border-1 border-green-500 rounded-sm bg-green-600 text-white hover:bg-green-500 active:bg-white transition-all ease-in-out duration-300">
+                    Daftar
+                </a>
+            </div>
+        </section>
+    </header>
+
+
+    <main class="px-20">
+        <!-- HERO SECTION -->
+        <section id="hero-section" class="min-h-screen w-full h-full">
+            <div class="w-full min-h-screen h-full flex flex-row justify-center items-center gap-4">
+                <div class="w-2/5 h-full flex flex-col justify-center items-start align-center gap-6">
+                    <h1 class="font-black text-3xl">Belajar Tanpa Batas, Untuk Semua</h1>
+                    <p class="text-xl">Bersama <span class="font-black">LuarSekolah</span>, siapa pun bisa menguasai 
+                        skill digital dan kerja profesional! Dari belajar hingga berkarir, 
+                        semuanya bisa!</p>
+                    <div class="w-full h-fit flex flex-row gap-1">
+                        <div class="w-18 h-18 rounded-full"><img class="w-full h-full rounded-full m-0 p-0" src="assets/profile1.png" alt="Profile"></div>
+                        <div class="w-18 h-18 -ml-5 rounded-full"><img class="w-full h-full rounded-full m-0 p-0" src="assets/profile2.png" alt="Profile"></div>
+                        <div class="w-18 h-18 -ml-5 rounded-full"><img class="w-full h-full rounded-full m-0 p-0" src="assets/profile3.png" alt="Profile"></div>
+                        <div class="w-18 h-18 -ml-5 rounded-full"><img class="w-full h-full rounded-full m-0 p-0" src="assets/profile4.png" alt="Profile"></div>
+                        <p class="w-1/2 h-18 justify-center items-center content-center pl-3">Lebih dari 50.000+ orang telah bergabung bersama LuarSekolah!</p>
+                    </div>
+                    <button class="bg-green-600 hover:bg-green-500 active:bg-white py-2 px-5 rounded-lg text-white transition-all ease-in-out duration-300 cursor-pointer">Mulai Belajarmu Sekarang</button>
+                </div>
+                <div class="w-3/5 h-full flex flex-col justify-center items-center gap-6">
+                    <img class="w-full h-full rounded-md" src="assets/hero-banner.png" alt="Hero Image">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- PROMO -->
+        <section class="min-h-screen w-full h-full">
+            <h1 class="text-xl font-black py-2 -mt-10">Promo hanya untuk kamu!</h1>
+            <div class="flex flex-row justify-between items-center">
+                <div class="w-96 h-48 border-1 border-black"></div>
+                <div class="w-96 h-48 border-1 border-black"></div>
+                <div class="w-96 h-48 border-1 border-black"></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
